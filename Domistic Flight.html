@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/mob.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/wizard.css">  -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -194,87 +195,147 @@
     <!--END HEADER SECTION-->
 	
 	<!--DASHBOARD-->
-	<section>
-		<div class="tr-register">
-			<div class="tr-regi-form v2-search-form">
-				<h4>Flight  <span>Details</span></h4>
-				<p>It's free and always will be.</p>
-				<form class="contact__form" method="post" action="http://rn53themes.net/themes/demo/travelz/mail/tourbooking.php">
-							<div class="alert alert-success contact__msg" style="display: none" role="alert">
-								Thank you for arranging a wonderful trip for us! Our team will contact you shortly!
-                            </div>
-                            <!-- <div class="row">
-                                <div class="col-md-12">
-                                    <label class="control panel" for="">Include Flights </label>
-                                    <input type="radio" class="form-check-input" name="optionsRadios" value="Yes" checked disabled>
-                                    <input type="radio" class="form-check-input" name="optionsRadios" value="No" checked disabled>
-                                    <label class="control panel" for="">Yes </label>
-                                
-                                </div>
+    <section class="form-box" >
+        <div class="container">  
+            <div class="row">                
+                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-wizard">  
+                    <!-- Form Wizard -->
+                    <form role="form" action="" method="post">
 
+                        <h2>Booking</h2>
+                        
+                        
+                        <!-- Form progress -->
+                        <div class="form-wizard-steps form-wizard-tolal-steps-4">
+                            <div class="form-wizard-progress">
+                                <div class="form-wizard-progress-line" data-now-value="12.25" data-number-of-steps="4" style="width: 12.25%;"></div>
+                            </div>
+                            <!-- Step 1 -->
+                            <div class="form-wizard-step active">
+                                <div class="form-wizard-step-icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+                                <p>Personal</p>
+                            </div>
+                            <!-- Step 1 -->
+                            
+                            <!-- Step 2 -->
+                            <div class="form-wizard-step">
+                                <div class="form-wizard-step-icon"><i class="fa fa-location-arrow" aria-hidden="true"></i></div>
+                                <p>Hotel</p>
+                            </div>
+                            <!-- Step 2 -->
+                            
+                            <!-- Step 3 -->
+                            <div class="form-wizard-step">
+                                <div class="form-wizard-step-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                <p>Flights</p>
+                            </div>
+                            <!-- Step 3 -->
+                            
+                            <!-- Step 4 -->
+                            <div class="form-wizard-step">
+                                <div class="form-wizard-step-icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+                                <p>Payment</p>
+                            </div>
+                            <!-- Step 4 -->
+                        </div>
+                        <!-- Form progress -->
+                        
+                        
+                        <!-- Form Step 1 -->
+                        <fieldset>
+
+                            <h4>Personal Information: <span>Step 1 - 4</span></h4>
+                            <div class="form-group">
+                                <label>First Name: <span>*</span></label>
+                                <input type="text" name="First Name" placeholder="First Name" class="form-control required">
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name: <span>*</span></label>
+                                <input type="text" name="Last Name" placeholder="Last Name" class="form-control required">
+                            </div>
+                           
+                            <!-- <div class="container-fluid">
+                            <div class="row form-inline">
+                            <div class="form-group col-md-3 col-xs-3">
+                                <label>Date Of Birth: </label>
+                            </div>
+                            <div class="form-group col-md-3 col-xs-3">
+                                <label>Date: </label>
+                                <select class="form-control">
+                                  <option>01</option>
+                                  <option>02</option>
+                                  <option>03</option>
+                                  <option>04</option>
+                                  <option>05</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 col-xs-3">
+                                <label>Month: </label>
+                                <select class="form-control">
+                                  <option>Jan</option>
+                                  <option>Feb</option>
+                                  <option>Mar</option>
+                                  <option>Apr</option>
+                                  <option>May</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 col-xs-3">
+                                <label>Year: </label>
+                                <select class="form-control">
+                                  <option>2017</option>
+                                  <option>2018</option>
+                                  <option>2019</option>
+                                  <option>2020</option>
+                                  <option>2021</option>
+                                </select>
+                            </div>
+                            </div>
                             </div> -->
-                         
-                            <div class="row">
-								<div class="input-field  col s12">
-         
-                                    <div class="tab-inn">
-                                        <!-- Switch -->
-                                        <div class="switch mar-bot-20">
-                                            <label>
-                                                Yes
-                                                <input type="checkbox">
-                                                <span class="lever"></span> No
-                                            </label>
-                                        </div>
-                                    </div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s12">
-									<input type="text"  class="validate" name="name" required>
-									<label>Enter your name</label>
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s6">
-									<input type="number"  class="validate" name="phone" required>
-									<label>Enter your phone</label>
-								</div>
-								<div class="input-field col s6">
-									<input type="email"  class="validate" name="email" required>
-									<label>Enter your email</label>
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s12">
-									<input type="text" id="select-city-1" class="autocomplete validate" name="city">
-									<label for="select-city-1">Select City or Place</label>
-								</div>
-								<div class="input-field col s12">
-									<select name="package">
-										<option value="" disabled selected>Select your package</option>
-										<option value="Honeymoon Package">Honeymoon Package</option>
-										<option value="Family Package">Family Package</option>
-										<option value="Holiday Package">Holiday Package</option>
-										<option value="Group Package">Group Package</option>
-										<option value="Regular Package">Regular Package</option>
-									</select>
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s6">
-									<input type="text" id="from" name="arrival" readonly>
-									<label for="from">Arrival Date</label>
-								</div>
-								<div class="input-field col s6">
-									<input type="text" id="to" name="departure" readonly>
-									<label for="to">Departure Date</label>
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s6">
-									<select name="noofadults">
-										<option value="" disabled selected>No of adults</option>
+                            
+                            <div class="form-group">
+                                <label>Email <span>*</span></label>
+                                <input type="text" name="email" placeholder="Email" class="form-control required">
+                            </div>
+                            <div class="form-group">
+                                <label>Password: <span>*</span></label>
+                                <input type="password" name="Password" placeholder="User Password" class="form-control required">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone: <span>*</span></label>
+                                <input type="text" name="Phone" placeholder="Phone" class="form-control required">
+                            </div>
+                            <div class="form-group">
+                                <label>Address: <span>*</span></label>
+                                <input type="text" name="Address" placeholder="Address" class="form-control required">
+                            </div>
+                            <div class="form-wizard-buttons">
+                                <button type="button" class="btn btn-next">Next</button>
+                            </div>
+                            
+                        </fieldset>
+                        <!-- Form Step 1 -->
+
+                        <!-- Form Step 2 -->
+                        <fieldset>
+
+                            <h4>Hotel Booking : <span>Step 2 - 4</span></h4>
+                           
+                            
+                            
+                            
+                            <div class="form-group">
+                                <label>Hotel Name: <span>*</span></label>
+                                <input type="text" name="Hotel Name" placeholder="City" class="form-control required">
+                            </div>
+                            <div class="form-group">
+                                <label>City: <span>*</span></label>
+                                <input type="text" name="City" placeholder="City" class="form-control required">
+                            </div>
+                            <label>No.of Rooms: <span>*</span></label>
+                            <div class="input-field ">
+                               
+									<select name="noofrooms">
+										<option value="" disabled selected></option>
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
@@ -282,53 +343,134 @@
 										<option value="5">5</option>
 										<option value="6">6</option>
 									</select>
-								</div>
-								<div class="input-field col s6">
-									<select name="noofchildrens">
-										<option value="" disabled selected>No of childrens</option>
+                            </div>
+                            <label>Room Types: <span>*</span></label>
+                            <div class="input-field ">
+                               
+									<select name="noofrooms">
+										<option value="" disabled selected></option>
+										<option value="1">Ultra Premium</option>
+										<option value="2">Ultra Deluxe</option>
+										<option value="3">Premium</option>
+										<option value="4">Deluxe</option>
+										<option value="5">Normal</option>
+										
+									</select>
+                            </div>
+                            <label>No.of Adults: <span>*</span></label>
+                            <div class="input-field ">
+                               
+									<select name="noofrooms">
+										<option value="" disabled selected></option>
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
 										<option value="4">4</option>
 										<option value="5">5</option>
-										<option value="6">6</option>											
+										<option value="6">6</option>
 									</select>
-								</div>
-							</div>							
+                            </div>
+                            <label>No.of Childerns: <span>*</span></label>
+                            <div class="input-field ">
+                               
+									<select name="noofrooms">
+										<option value="" disabled selected></option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+									</select>
+                            </div>
+                            
+                            <div class="form-wizard-buttons">
+                                <button type="button" class="btn btn-previous">Previous</button>
+                                <button type="button" class="btn btn-next">Next</button>
+                            </div>
+                        </fieldset>
+                        <!-- Form Step 2 -->
 
-							<div class="row">
-								<div class="input-field col s6">
-									<select name="minprice">
-										<option value="" disabled selected>Min Price</option>
-										<option value="$200">$200</option>
-										<option value="$500">$500</option>
-										<option value="$1000">$1000</option>
-										<option value="$5000">$5000</option>
-										<option value="$10,000">$10,000</option>
-										<option value="$50,000">$50,000</option>
-									</select>
-								</div>
-								<div class="input-field col s6">
-									<select name="maxprice">
-										<option value="" disabled selected>Max Price</option>
-										<option value="$200">$200</option>
-										<option value="$500">$500</option>
-										<option value="$1000">$1000</option>
-										<option value="$5000">$5000</option>
-										<option value="$10,000">$10,000</option>
-										<option value="$50,000">$50,000</option>
-									</select>
-								</div>								
-							</div>							
-							<div class="row">
-								<div class="input-field col s12">
-									<input type="submit" value="Book Now" class="waves-effect waves-light tourz-sear-btn v2-ser-btn">
-								</div>
-							</div>
-						</form>
-			</div>
-		</div>
-	</section>
+                        <!-- Form Step 3 -->
+                        <fieldset>
+
+                            <h4>Domestic Flights: <span>Step 3 - 4</span></h4>
+                            <div class="form-group">
+                                <div class="tab-inn">
+                                    <!-- Switch -->
+                                    <div class="switch mar-bot-20">
+                                        <label>
+                                            Yes
+                                            <input type="checkbox">
+                                            <span class="lever"></span> No
+                                        </label>
+                                    </div>
+                            
+                            <br/>
+                            <div class="form-wizard-buttons">
+                                <button type="button" class="btn btn-previous">Previous</button>
+                                <button type="button" class="btn btn-next">Next</button>
+                            </div>
+                        </fieldset>
+                        <!-- Form Step 3 -->
+                        
+                        <!-- Form Step 4 -->
+                        <fieldset>
+
+                            <h4>Payment Information: <span>Step 4 - 4</span></h4>
+                            <div style="clear:both;"></div>
+                            <div class="form-group">
+                                <label>Bank Name: <span>*</span></label>
+                                <input type="text" name="Bank Name" placeholder="Bank Name" class="form-control required">
+                            </div>
+                            <div class="form-group">
+                                <label>Payment Type : </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="Payment" value="option1" checked="checked"> Master Card
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="Payment" value="option2"> Visa Card
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>Holder Name: <span>*</span></label>
+                                <input type="text" name="Holder Name" placeholder="Holder Name" class="form-control required">
+                            </div>
+                            <div class="container-fluid">
+                            <div class="row form-inline">
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label>Card Number: <span>*</span></label>
+                                <input type="text" name="Card Number" placeholder="Card Number" class="form-control required">
+                            </div>
+                            <div class="form-group col-md-6 col-xs-6">
+                                <label>CVC: <span>*</span></label>
+                                <input type="text" name="CVC" placeholder="CVC" class="form-control required">
+                            </div>
+                            </div>
+                            </div>
+                            <br/>
+                            <div class="container-fluid">
+                            <div class="row form-inline">
+                           
+                            
+                            
+                            </div>
+                            </div>
+                            <br/>
+                            <div class="form-wizard-buttons">
+                                <button type="button" class="btn btn-previous">Previous</button>
+                                <button type="submit" class="btn btn-submit">Submit</button>
+                            </div>
+                        </fieldset>
+                        <!-- Form Step 4 -->
+                    
+                    </form>
+                    <!-- Form Wizard -->
+                </div>
+            </div>
+                
+        </div>
+    </section>
 	<!--END DASHBOARD-->
 	<!--====== TIPS BEFORE TRAVEL ==========-->
 	<section>
@@ -366,40 +508,35 @@
                         <div>
                             <div class="row">
                                 <div class="col-sm-3 foot-spec foot-com">
-                                    <h4>Croconile</h4>
+                                    <h5> <span>Croconile </span></h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse perferendis dolores laudantium cumque a reiciendis architecto est possimus dolor! Deserunt fugiat eligendi totam sed odio eaque? Consequuntur numquam saepe delectus.</p>
                                 </div>
                                 <div class="col-sm-3 foot-spec foot-com">
-                                    <h4><span>Address</span> & Contact Info</h4>
+                                    <h5><span>Address & Contact Info</span></h5>
                                     <p>11 Aladeeb Adham Ali , Sheraton, Cairo, Egypt</p>
-                                    <p> <span class="strong">Phone: </span> + 02 22682428 </p>
-                                    <p> <span class="strong">Mobile </span> + 02 01221232504</p>
-                                    <p> <span class="strong">Email: </span> info@cvc.vacations </p>
+                                    <h6> <span class="strong">Phone: </span> + 02 22682428 </h6>
+                                    <h6> <span class="strong">Mobile </span> + 02 01221232504</h6>
+                                    <h6> <span class="strong">Email: </span> info@cvc.vacations </h6>
                                 </div>
                                 <div class="col-sm-3 col-md-3 foot-spec foot-com">
-                                    <h4><span>SUPPORT</span> & HELP</h4>
-                                    <ul class="two-columns">
+                                    <h5> <span >SUPPORT & HELP</span></h5>
+                                    <ul class="one-columns">
                                         <li> <a href="#">About Us</a> </li>
+                                        <li> <a href="#">Packages</a> </li>
                                         <li> <a href="#">FAQ</a> </li>
-                                        <li> <a href="#">Feedbacks</a> </li>
                                         <li> <a href="#">Blog </a> </li>
-                                        <li> <a href="#">Use Cases</a> </li>
-                                        <li> <a href="#">Advertise us</a> </li>
-                                        <li> <a href="#">Discount</a> </li>
-                                        <li> <a href="#">Vacations</a> </li>
-                                        <li> <a href="#">Branding Offers </a> </li>
                                         <li> <a href="#">Contact Us</a> </li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-3 foot-social foot-spec foot-com">
-                                    <h4><span>Follow</span> with us</h4>
+                                    <h5><span>Follow with us</span></h5>
                                     <p>Join the thousands of other There are many variations of passages of Lorem Ipsum available</p>
                                     <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
-                                        <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a> </li>
+                                      <li> <a href="#">  <img src="images/facebook.png" height="32px" width="32px" alt=""> </li></a> 
+                                        
+                                        <li><a href="#"><img src="images/instagram.png"  height="32px" width="32px" alt=""></a> </li>
+                                        <li><a href="#"><img src="images/whatsapp.png"  height="32px" width="32px" alt=""></a> </li>
+                                        <li><a href="#"><img src="images/twitter.png"  height="32px" width="32px" alt=""></a> </li>
                                     </ul>
                                 </div>
                             </div>
@@ -408,7 +545,7 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
 	<!--====== FOOTER - COPYRIGHT ==========-->
 	<section>
 		<div class="rows copy">
@@ -437,7 +574,8 @@
 	<script src="js/wow.min.js"></script>
 	<script src="js/materialize.min.js"></script>
 	<script src="js/mail.js"></script>
-	<script src="js/custom.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/wizard.js"></script>
 </body>
 
 
