@@ -1493,20 +1493,20 @@
  .foot-sec2 p {
      color: #616161;
 }
- .two-columns {
+ .one-columns {
      padding: 0px;
 }
- .two-columns li {
-     width: 50%;
-     float: left;
+ .one-columns li {
+    
+     
      list-style-type: none;
 }
- .two-columns::after {
+ .one-columns::after {
      content: "";
      display: table;
      clear: both;
 }
- .two-columns li a {
+ .one-columns li a {
      color: #616161;
 }
 /*-------------------------------------------------------*/
@@ -1523,6 +1523,11 @@
  .footer_social ul li a {
      color: #fff;
      text-decoration: none;
+}
+.footer_social ul li img{
+
+    height: 32px;
+    width: 32px;
 }
  .footer_social ul li a i {
 }
@@ -4164,9 +4169,13 @@
 /*-------------------------------------------------*/
  .foot-mob-app {
 }
- .foot-mob-app h2 {
+ .foot-mob-app h3 {
      margin-top: 0px;
-     font-size: 45px;
+     font-size: 55px;
+}
+.foot-mob-app h2 {
+    margin-top: 0px;
+    font-size: 55px;
 }
  .foot-mob-app p {
      font-size: 15px;

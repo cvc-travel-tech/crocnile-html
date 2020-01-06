@@ -5228,7 +5228,7 @@ textarea.materialize-textarea + label:after {
 .input-field.inline .select-dropdown {
     margin-bottom: 1rem;
 }
-.input-field.col label {} .input-field.col .prefix ~ label,
+.input-field.col .prefix ~ label,
 .input-field.col .prefix ~ .validate ~ label {
     width: calc(100% - 3rem - 1.5rem);
 }
