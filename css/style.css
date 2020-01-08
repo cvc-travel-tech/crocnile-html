@@ -7730,12 +7730,59 @@ a.ui-button:active,
     margin-top: -7px;
     padding: 20px 10px;
 }
+<<<<<<< HEAD
 
 .m-menu-inn {}
 
 .mm1-com {
     width: 25%;
     float: left;
+=======
+/*-------------------------------------------------------*/
+/* REGISTER AND LOGIN 
+/*-------------------------------------------------------*/
+ .tr-register {
+     background: url(../images/Ramsespaid1.jpg) #e6e6e6;
+     position: relative;
+    /* overflow: hidden;
+     */
+     display: inline-block;
+     width: 100%;
+     height: 100%;
+}
+ .tr-register::before {
+     content: '';
+     position: absolute;
+     background: rgba(33, 48, 59, 0.52);
+     top: 0px;
+     bottom: 0px;
+     left: 0px;
+     width: 100%;
+     border-radius: 5px;
+}
+ .tr-regi-form {
+     margin: 0 auto;
+     width: 50%;
+     background: #fff;
+     padding: 45px 50px 50px 50px;
+     margin-top: 70px;
+     margin-bottom: 70px;
+     border-radius: 5px;
+     text-align: center;
+     position: relative;
+     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
+}
+ .tr-regi-form input {
+     padding: 10px 10px 10px;
+     border: 1px solid #c9c9c9;
+}
+ .tr-regi-form textarea {
+    background: #fff;
+    border: 0px;
+    margin-top: 30px;
+    border-radius: 2px;
+    padding: 0px 10px;
+>>>>>>> 7da03e5484d2595aa60a03c54ee22c392747198e
     box-sizing: border-box;
     padding: 20px;
     border-right: 1px solid #eaeaea;
